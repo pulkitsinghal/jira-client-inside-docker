@@ -7,6 +7,7 @@ Run an application like Jira Client inside a docker container on mac/osx
 1. Go ahead and clone this project.
 2. You can build the image locally after cloning this project: `docker build -t jiraclient .`
 3. Before you can run the image, you need to install xQuartz on mac/osx platforms
+    1. If you turn off the `XQuartz > Preferences > Output > Full Screen Mode`, you will feel a lot less confused when jiraclient runs, I know I did!
     1. This additional command was supposed to help but when I tried it ... it didn't accomplish its end goal (don't run it!):
 
     ```
