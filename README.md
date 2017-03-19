@@ -30,7 +30,7 @@ Run an application like Jira Client inside a docker container on mac/osx
     docker run --rm -it java:7 /bin/bash
     docker run --rm -it openjdk:8 /bin/bash
     ```
-2. And on each one I ran the followign simple commands to install jiraclient but in the end everythign failed because javafx was missing:
+2. And on each one I ran the following simple commands to install jiraclient but in the end everything failed because javafx was missing:
 
    ```
    # try to run jiraclient on the java image
