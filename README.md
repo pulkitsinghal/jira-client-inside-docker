@@ -17,8 +17,7 @@ Run an application like Jira Client inside a docker container on mac/osx
     1. You can use brew to install it: `sudo brew install socat`
     2. or, yo ucan use macports tp install it: `sudo port install socat`
 5. This really extensive [thread](https://github.com/docker/docker/issues/8710) gives us an easy command for using `socat` to expose local `xQuartz` socket on a TCP port, let's run it in terminal: `socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"`
-6. Find out your local IP, such as `192.168.x.x`
-7. In another terminal, you can now start jiraclient: `docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=<local-ip>:0 jiraclient`
+6. In another terminal, you can now start jiraclient: `docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$(ipconfig getifaddr en0):0 jiraclient`
 
 # Trial & Error
 
