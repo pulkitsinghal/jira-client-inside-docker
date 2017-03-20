@@ -2,6 +2,8 @@
 
 Run an application like Jira Client inside a docker container on mac/osx
 
+*NOTE: This plugin is meant for `Jira Server` and not `Jira Cloud` so don't waste your time with it if you use `Jira Cloud`.
+
 # Steps
 
 1. Go ahead and clone this project.
